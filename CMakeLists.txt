@@ -136,7 +136,7 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/ros_libgp_node.cpp)
-#add_executable(gp_node src/gp_node.cpp)
+add_executable(gp_node src/gp_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,7 +152,7 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-#target_link_libraries(gp_node  ${catkin_LIBRARIES} libgp )
+target_link_libraries(gp_node  ${catkin_LIBRARIES} ros_libgp )
 
 #############
 ## Install ##
