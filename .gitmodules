@@ -1,0 +1,3 @@
+[submodule "include/libgp"]
+	path = include/libgp
+	url = https://github.com/mahmoud-a-ali/libgp
